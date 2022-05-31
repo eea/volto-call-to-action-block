@@ -5,13 +5,21 @@ const messages = defineMessages({
     id: 'Call to Action',
     defaultMessage: 'Call to Action',
   },
-  Title: {
-    id: 'Title',
-    defaultMessage: 'Title',
+  Text: {
+    id: 'Text',
+    defaultMessage: 'Text',
   },
   Link: {
     id: 'Link',
     defaultMessage: 'Link',
+  },
+  Icon: {
+    id: 'Icon',
+    defaultMessage: 'Icon',
+  },
+  IconRight: {
+    id: 'Icon on the right',
+    defaultMessage: 'Icon on the right',
   },
   Align: {
     id: 'Alignment',
@@ -21,13 +29,45 @@ const messages = defineMessages({
     id: 'Theme',
     defaultMessage: 'Theme',
   },
+  ThemePrimary: {
+    id: 'Primary',
+    defaultMessage: 'Primary',
+  },
+  ThemeSecondary: {
+    id: 'Secondary',
+    defaultMessage: 'Secondary',
+  },
+  ThemeLink: {
+    id: 'Link',
+    defaultMessage: 'Link',
+  },
   Inverted: {
     id: 'Inverted',
     defaultMessage: 'Inverted',
   },
-  DefaultTitle: {
+  DefaultText: {
     id: 'Click here',
     defaultMessage: 'Click here',
+  },
+  Target: {
+    id: 'Target',
+    defaultMessage: 'Target',
+  },
+  TargetEmpty: {
+    id: 'Open in this window / frame',
+    defaultMessage: 'Open in this window / frame',
+  },
+  TargetBlank: {
+    id: 'Open in new window',
+    defaultMessage: 'Open in new window',
+  },
+  TargetParent: {
+    id: 'Open in parent window / frame',
+    defineMessages: 'Open in parent window / frame',
+  },
+  TargetTop: {
+    id: 'Open in top frame (replaces all frames)',
+    defaultMessage: 'Open in top frame (replaces all frames)',
   },
 });
 
@@ -38,14 +78,14 @@ export const EditSchema = ({ intl }) => ({
     {
       id: 'default',
       title: 'Default',
-      fields: ['title', 'href'],
+      fields: ['text', 'href', 'target'],
     },
   ],
 
   properties: {
-    title: {
-      title: intl.formatMessage(messages.Title),
-      default: intl.formatMessage(messages.DefaultTitle),
+    text: {
+      title: intl.formatMessage(messages.Text),
+      default: intl.formatMessage(messages.DefaultText),
     },
     href: {
       title: intl.formatMessage(messages.Link),
@@ -53,6 +93,15 @@ export const EditSchema = ({ intl }) => ({
       mode: 'link',
       selectedItemAttrs: ['Title', 'Description', 'hasPreviewImage'],
       allowExternals: true,
+    },
+    target: {
+      title: intl.formatMessage(messages.Target),
+      choices: [
+        ['_self', intl.formatMessage(messages.TargetEmpty)],
+        ['_blank', intl.formatMessage(messages.TargetBlank)],
+        ['_parent', intl.formatMessage(messages.TargetParent)],
+        ['_top', intl.formatMessage(messages.TargetTop)],
+      ],
     },
   },
   required: [],
@@ -65,7 +114,7 @@ export const StylingSchema = ({ intl }) => ({
     {
       id: 'default',
       title: 'Default',
-      fields: ['align', 'theme', 'inverted'],
+      fields: ['align', 'theme', 'inverted', 'icon', 'rightIcon'],
     },
   ],
   properties: {
@@ -76,14 +125,22 @@ export const StylingSchema = ({ intl }) => ({
     theme: {
       title: intl.formatMessage(messages.Theme),
       choices: [
-        ['primary', 'Primary'],
-        ['secondary', 'Secondary'],
-        ['link', 'Link'],
+        ['primary', intl.formatMessage(messages.ThemePrimary)],
+        ['secondary', intl.formatMessage(messages.ThemeSecondary)],
+        ['link', intl.formatMessage(messages.ThemeLink)],
       ],
       default: 'primary',
     },
     inverted: {
       title: intl.formatMessage(messages.Inverted),
+      type: 'boolean',
+    },
+    icon: {
+      title: intl.formatMessage(messages.Icon),
+      default: 'chevron',
+    },
+    rightIcon: {
+      title: intl.formatMessage(messages.IconRight),
       type: 'boolean',
     },
   },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import cx from 'classnames';
 import { flattenToAppURL } from '@plone/volto/helpers';
 
@@ -21,26 +21,26 @@ const View = ({ data, isEditMode }) => {
     }
   }, [isEditMode, data.href]);
 
-  const link = hasLink ? flattenToAppURL(data.href[0]['@id']) : null;
-  const title = hasLink ? data.href[0]['title'] : '';
-
   return (
-    <div className={cx('block button align', data?.styles?.align)}>
-      {data?.styles?.theme === 'link' ? (
-        <a href={link} title={title}>
-          {data.title}
-        </a>
-      ) : (
-        <Button
-          inverted={data?.styles?.inverted}
-          className={cx(data?.styles?.theme, data?.styles?.align)}
-          as="a"
-          href={link}
-          title={title}
-        >
-          {data.title}
-        </Button>
-      )}
+    <div className={cx('block button align', data.styles?.align)}>
+      <a
+        className={cx(
+          data.styles?.theme !== 'link' ? 'ui button' : '',
+          data.styles?.inverted ? 'inverted' : '',
+          data.styles?.icon
+            ? data.styles?.rightIcon
+              ? 'icon right labeled'
+              : 'icon left labeled'
+            : '',
+          data.styles?.theme,
+        )}
+        href={hasLink ? flattenToAppURL(data.href[0]['@id']) : null}
+        title={hasLink ? data.href[0]['title'] : ''}
+        target={data.target}
+      >
+        {data.styles?.icon && <Icon className={data.styles?.icon} />}
+        {data.text}
+      </a>
     </div>
   );
 };
