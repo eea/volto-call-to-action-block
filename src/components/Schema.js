@@ -129,7 +129,6 @@ export const StylingSchema = ({ intl }) => ({
         ['secondary', intl.formatMessage(messages.ThemeSecondary)],
         ['link', intl.formatMessage(messages.ThemeLink)],
       ],
-      default: 'primary',
     },
     inverted: {
       title: intl.formatMessage(messages.Inverted),
@@ -137,7 +136,6 @@ export const StylingSchema = ({ intl }) => ({
     },
     icon: {
       title: intl.formatMessage(messages.Icon),
-      default: 'chevron',
     },
     rightIcon: {
       title: intl.formatMessage(messages.IconRight),
