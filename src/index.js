@@ -1,20 +1,24 @@
+import callToActionSVG from '@plone/volto/icons/circle-right.svg';
 import Edit from './components/Edit';
 import View from './components/View';
-import circleMenuSVG from '@plone/volto/icons/circle-menu.svg';
+import { StylingSchema, EditSchema } from './components/Schema';
+
 import './theme/main.less';
 
 const applyConfig = (config) => {
   config.blocks.blocksConfig.callToActionBlock = {
-    availableColors: ['#ebebeb', '#023d6b', '#ddeeff', '#eb5f73', '#b9d25f'],
     id: 'callToActionBlock',
     title: 'Call to Action',
-    icon: circleMenuSVG,
+    icon: callToActionSVG,
     group: 'common',
     view: View,
     edit: Edit,
+    editSchema: EditSchema,
+    stylesSchema: StylingSchema,
     restricted: false,
     mostUsed: false,
     sidebarTab: 1,
+    enableStyling: true,
     security: {
       addPermission: [],
       view: [],
