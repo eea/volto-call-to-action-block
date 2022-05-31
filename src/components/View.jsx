@@ -1,7 +1,8 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import cx from 'classnames';
-import { flattenToAppURL } from '@plone/volto/helpers';
+import { Link } from 'react-router-dom';
+import { flattenToAppURL, isInternalURL } from '@plone/volto/helpers';
 
 const View = ({ data, isEditMode }) => {
   const [hasLink, setHasLink] = React.useState(false);
@@ -21,9 +22,11 @@ const View = ({ data, isEditMode }) => {
     }
   }, [isEditMode, data.href]);
 
+  const As = hasLink && isInternalURL(data.href[0]['@id']) ? Link : 'a';
+
   return (
     <div className={cx('block button align', data.styles?.align)}>
-      <a
+      <As
         className={cx(
           data.styles?.theme !== 'link' ? 'ui button' : '',
           data.styles?.inverted ? 'inverted' : '',
@@ -35,12 +38,13 @@ const View = ({ data, isEditMode }) => {
           data.styles?.theme,
         )}
         href={hasLink ? flattenToAppURL(data.href[0]['@id']) : null}
+        to={hasLink ? flattenToAppURL(data.href[0]['@id']) : null}
         title={hasLink ? data.href[0]['title'] : ''}
         target={data.target}
       >
         {data.styles?.icon && <Icon className={data.styles?.icon} />}
         {data.text}
-      </a>
+      </As>
     </div>
   );
 };

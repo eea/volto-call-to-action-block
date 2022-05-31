@@ -5,9 +5,9 @@ const messages = defineMessages({
     id: 'Call to Action',
     defaultMessage: 'Call to Action',
   },
-  Text: {
-    id: 'Text',
-    defaultMessage: 'Text',
+  Label: {
+    id: 'Label',
+    defaultMessage: 'Label',
   },
   Link: {
     id: 'Link',
@@ -45,7 +45,7 @@ const messages = defineMessages({
     id: 'Inverted',
     defaultMessage: 'Inverted',
   },
-  DefaultText: {
+  DefaultLabel: {
     id: 'Click here',
     defaultMessage: 'Click here',
   },
@@ -84,8 +84,8 @@ export const EditSchema = ({ intl }) => ({
 
   properties: {
     text: {
-      title: intl.formatMessage(messages.Text),
-      default: intl.formatMessage(messages.DefaultText),
+      title: intl.formatMessage(messages.Label),
+      default: intl.formatMessage(messages.DefaultLabel),
     },
     href: {
       title: intl.formatMessage(messages.Link),
