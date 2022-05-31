@@ -25,7 +25,7 @@ const View = ({ data, isEditMode }) => {
   const As = hasLink && isInternalURL(data.href[0]['@id']) ? Link : 'a';
 
   return (
-    <div className={cx('block button align', data.styles?.align)}>
+    <div className={cx('block call-to-action align', data.styles?.align)}>
       <As
         className={cx(
           data.styles?.theme !== 'link' ? 'ui button' : '',

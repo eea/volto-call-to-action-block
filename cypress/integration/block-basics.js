@@ -16,8 +16,8 @@ describe('Blocks Tests', () => {
 
     // Add block
     cy.get('.ui.basic.icon.button.block-add-button').first().click();
-    cy.get('.blocks-chooser .title').contains('Media').click();
-    cy.get('.content.active.media .button.image').contains('Image').click();
+    cy.get('.blocks-chooser .title').contains('Common').click();
+    cy.get('.content.active.common .button.callToActionBlock').contains('Call to Action').click();
 
     // Save
     cy.get('#toolbar-save').click();
@@ -25,6 +25,6 @@ describe('Blocks Tests', () => {
 
     // then the page view should contain our changes
     cy.contains('My Add-on Page');
-    cy.get('.block.image');
+    cy.get('.block.call-to-action');
   });
 });
