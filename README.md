@@ -15,11 +15,11 @@
 [![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-call-to-action-block-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-call-to-action-block-develop)
 
 
-[Volto](https://github.com/plone/volto) add-on
+[Volto](https://github.com/plone/volto) Call to Action Block
 
 ## Features
 
-Demo GIF
+![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/develop/docs/call-to-action.gif)
 
 ## Getting started
 

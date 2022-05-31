@@ -1,6 +1,6 @@
 {
   "name": "@eeacms/volto-call-to-action-block",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "@eeacms/volto-call-to-action-block: Volto add-on",
   "main": "src/index.js",
   "author": "European Environment Agency: IDM2 A-Team",
@@ -16,10 +16,9 @@
     "type": "git",
     "url": "git@github.com:eea/volto-call-to-action-block.git"
   },
-  "dependencies": {
-    "@plone/scripts": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@plone/scripts": "*",
     "@cypress/code-coverage": "^3.9.5",
     "babel-plugin-transform-class-properties": "^6.24.1"
   },
