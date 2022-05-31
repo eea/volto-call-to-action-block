@@ -68,7 +68,6 @@ export const StylingSchema = ({ intl }) => ({
       fields: ['align', 'theme', 'inverted'],
     },
   ],
-
   properties: {
     align: {
       title: intl.formatMessage(messages.Align),

@@ -16,10 +16,9 @@
     "type": "git",
     "url": "git@github.com:eea/volto-call-to-action-block.git"
   },
-  "dependencies": {
-    "@plone/scripts": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@plone/scripts": "*",
     "@cypress/code-coverage": "^3.9.5",
     "babel-plugin-transform-class-properties": "^6.24.1"
   },
