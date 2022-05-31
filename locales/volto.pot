@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2022-05-31T13:56:50.790Z\n"
+"POT-Creation-Date: 2022-05-31T18:04:15.692Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -30,6 +30,16 @@ msgid "Click here"
 msgstr ""
 
 #: components/Schema
+# defaultMessage: Icon
+msgid "Icon"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Icon on the right
+msgid "Icon on the right"
+msgstr ""
+
+#: components/Schema
 # defaultMessage: Inverted
 msgid "Inverted"
 msgstr ""
@@ -40,11 +50,46 @@ msgid "Link"
 msgstr ""
 
 #: components/Schema
-# defaultMessage: Theme
-msgid "Theme"
+# defaultMessage: Open in new window
+msgid "Open in new window"
 msgstr ""
 
 #: components/Schema
-# defaultMessage: Title
-msgid "Title"
+# defaultMessage: undefined
+msgid "Open in parent window / frame"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Open in this window / frame
+msgid "Open in this window / frame"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Open in top frame (replaces all frames)
+msgid "Open in top frame (replaces all frames)"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Primary
+msgid "Primary"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Secondary
+msgid "Secondary"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Target
+msgid "Target"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Text
+msgid "Text"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Theme
+msgid "Theme"
 msgstr ""
