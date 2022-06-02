@@ -4,6 +4,19 @@ import cx from 'classnames';
 import { Link } from 'react-router-dom';
 import { flattenToAppURL, isInternalURL } from '@plone/volto/helpers';
 
+const Content = ({ data }) =>
+  data.styles?.rightIcon ? (
+    <>
+      {data.text}
+      {data.styles?.icon ? <Icon className={data.styles?.icon} /> : ''}
+    </>
+  ) : (
+    <>
+      {data.styles?.icon ? <Icon className={data.styles?.icon} /> : ''}
+      {data.text}
+    </>
+  );
+
 const View = ({ data, isEditMode }) => {
   const [hasLink, setHasLink] = React.useState(false);
 
@@ -23,7 +36,6 @@ const View = ({ data, isEditMode }) => {
   }, [isEditMode, data.href]);
 
   const As = hasLink && isInternalURL(data.href[0]['@id']) ? Link : 'a';
-
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>
       <As
@@ -42,8 +54,7 @@ const View = ({ data, isEditMode }) => {
         title={hasLink ? data.href[0]['title'] : ''}
         target={data.target}
       >
-        {data.styles?.icon && <Icon className={data.styles?.icon} />}
-        {data.text}
+        <Content data={data} />
       </As>
     </div>
   );
