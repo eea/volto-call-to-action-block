@@ -21,3 +21,21 @@
     }
   }
 }
+
+/* Fix CSS when volto-block-style is present */
+.styled {
+  &.styled-callToActionBlock {
+    &.right,
+    &.left {
+      float: none;
+    }
+
+    &.full-width {
+      right: 0;
+      left: 0;
+      width: 100% !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+}
