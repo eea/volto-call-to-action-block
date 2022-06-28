@@ -37,6 +37,10 @@ const messages = defineMessages({
     id: 'Secondary',
     defaultMessage: 'Secondary',
   },
+  ThemeTertiary: {
+    id: 'Tertiary',
+    defaultMessage: 'Tertiary',
+  },
   ThemeLink: {
     id: 'Link',
     defaultMessage: 'Link',
@@ -127,6 +131,7 @@ export const StylingSchema = ({ intl }) => ({
       choices: [
         ['primary', intl.formatMessage(messages.ThemePrimary)],
         ['secondary', intl.formatMessage(messages.ThemeSecondary)],
+        ['tertiary', intl.formatMessage(messages.ThemeTertiary)],
         ['link', intl.formatMessage(messages.ThemeLink)],
       ],
     },
