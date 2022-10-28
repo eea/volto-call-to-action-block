@@ -1,4 +1,4 @@
-mport { slateBeforeEach, slateAfterEach } from '../support/e2e';
+import { slateBeforeEach, slateAfterEach } from '../support/e2e';
 
 describe('Blocks Tests', () => {
   beforeEach(slateBeforeEach);
