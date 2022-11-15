@@ -21,6 +21,12 @@
 
 ![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/develop/docs/call-to-action.gif)
 
+## Upgrade
+
+### Upgrading to 2.x
+
+This version requires: `@plone/volto >= 16.0.0.alpha.46` (schemaEnhancer / addStyling).
+
 ## Getting started
 
 ### Try volto-call-to-action-block with Docker
