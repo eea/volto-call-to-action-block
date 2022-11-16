@@ -14,11 +14,10 @@ const applyConfig = (config) => {
     view: View,
     edit: Edit,
     editSchema: EditSchema,
-    stylesSchema: StylingSchema,
+    schemaEnhancer: StylingSchema,
     restricted: false,
     mostUsed: false,
     sidebarTab: 1,
-    enableStyling: true,
     security: {
       addPermission: [],
       view: [],

@@ -1,4 +1,5 @@
 import { defineMessages } from 'react-intl';
+import { addStyling } from '@plone/volto/helpers';
 
 const messages = defineMessages({
   Type: {
@@ -111,41 +112,46 @@ export const EditSchema = ({ intl }) => ({
   required: [],
 });
 
-export const StylingSchema = ({ intl }) => ({
-  title: intl.formatMessage(messages.Type),
-  block: 'callToAction',
-  fieldsets: [
-    {
-      id: 'default',
-      title: 'Default',
-      fields: ['align', 'theme', 'inverted', 'icon', 'rightIcon'],
+export const StylingSchema = (props) => {
+  const { intl } = props;
+  const schema = addStyling(props);
+  schema.properties.styles.schema = {
+    title: intl.formatMessage(messages.Type),
+    block: 'callToAction',
+    fieldsets: [
+      {
+        id: 'default',
+        title: 'Default',
+        fields: ['align', 'theme', 'inverted', 'icon', 'rightIcon'],
+      },
+    ],
+    properties: {
+      align: {
+        title: intl.formatMessage(messages.Align),
+        widget: 'align',
+      },
+      theme: {
+        title: intl.formatMessage(messages.Theme),
+        choices: [
+          ['primary', intl.formatMessage(messages.ThemePrimary)],
+          ['secondary', intl.formatMessage(messages.ThemeSecondary)],
+          ['tertiary', intl.formatMessage(messages.ThemeTertiary)],
+          ['link', intl.formatMessage(messages.ThemeLink)],
+        ],
+      },
+      inverted: {
+        title: intl.formatMessage(messages.Inverted),
+        type: 'boolean',
+      },
+      icon: {
+        title: intl.formatMessage(messages.Icon),
+      },
+      rightIcon: {
+        title: intl.formatMessage(messages.IconRight),
+        type: 'boolean',
+      },
     },
-  ],
-  properties: {
-    align: {
-      title: intl.formatMessage(messages.Align),
-      widget: 'align',
-    },
-    theme: {
-      title: intl.formatMessage(messages.Theme),
-      choices: [
-        ['primary', intl.formatMessage(messages.ThemePrimary)],
-        ['secondary', intl.formatMessage(messages.ThemeSecondary)],
-        ['tertiary', intl.formatMessage(messages.ThemeTertiary)],
-        ['link', intl.formatMessage(messages.ThemeLink)],
-      ],
-    },
-    inverted: {
-      title: intl.formatMessage(messages.Inverted),
-      type: 'boolean',
-    },
-    icon: {
-      title: intl.formatMessage(messages.Icon),
-    },
-    rightIcon: {
-      title: intl.formatMessage(messages.IconRight),
-      type: 'boolean',
-    },
-  },
-  required: [],
-});
+    required: [],
+  };
+  return schema;
+};
