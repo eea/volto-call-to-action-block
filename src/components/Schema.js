@@ -132,11 +132,21 @@ export const StylingSchema = (props) => {
       },
       theme: {
         title: intl.formatMessage(messages.Theme),
-        choices: [
-          ['primary', intl.formatMessage(messages.ThemePrimary)],
-          ['secondary', intl.formatMessage(messages.ThemeSecondary)],
-          ['tertiary', intl.formatMessage(messages.ThemeTertiary)],
-          ['link', intl.formatMessage(messages.ThemeLink)],
+        widget: 'color_picker',
+        colors: [
+          { name: 'primary', label: intl.formatMessage(messages.ThemePrimary) },
+          {
+            name: 'secondary',
+            label: intl.formatMessage(messages.ThemeSecondary),
+          },
+          {
+            name: 'tertiary',
+            label: intl.formatMessage(messages.ThemeTertiary),
+          },
+          {
+            name: 'link',
+            label: intl.formatMessage(messages.ThemeLink),
+          },
         ],
       },
       inverted: {
