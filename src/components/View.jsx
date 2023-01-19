@@ -35,7 +35,8 @@ const View = ({ data, isEditMode }) => {
     }
   }, [isEditMode, data.href]);
 
-  const As = hasLink && isInternalURL(data.href[0]['@id']) ? Link : 'a';
+  const url = flattenToAppURL(data.href?.[0]?.['@id'] || data.href);
+  const As = hasLink && isInternalURL(url) ? Link : 'a';
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>
       <As
@@ -49,9 +50,9 @@ const View = ({ data, isEditMode }) => {
             : '',
           data.styles?.theme,
         )}
-        href={hasLink ? flattenToAppURL(data.href[0]['@id']) : null}
-        to={hasLink ? flattenToAppURL(data.href[0]['@id']) : null}
-        title={hasLink ? data.href[0]['title'] : ''}
+        href={hasLink ? url : null}
+        to={hasLink ? url : null}
+        title={hasLink ? data.text : ''}
         target={data.target}
       >
         <Content data={data} />

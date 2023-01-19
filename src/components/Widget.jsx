@@ -1,6 +1,6 @@
 /**
- * UrlWidget component.
- * @module components/manage/Widgets/UrlWidget
+ * CallToActionWidget component.
+ * @module components/Widget
  */
 
 import React, { useState } from 'react';
@@ -30,7 +30,7 @@ import navTreeSVG from '@plone/volto/icons/nav.svg';
  * }
  * ```
  */
-export const UrlWidget = (props) => {
+export const CallToActionWidget = (props) => {
   const {
     id,
     onChange,
@@ -43,7 +43,9 @@ export const UrlWidget = (props) => {
   } = props;
   const inputId = `field-${id}`;
 
-  const [value, setValue] = useState(flattenToAppURL(props.value));
+  const [value, setValue] = useState(
+    flattenToAppURL(props.value?.[0]?.['@id'] || props.value),
+  );
   const [isInvalid, setIsInvalid] = useState(false);
   /**
    * Clear handler
@@ -92,7 +94,7 @@ export const UrlWidget = (props) => {
           type="url"
           value={value || ''}
           disabled={isDisabled}
-          placeholder={placeholder}
+          placeholder={placeholder || 'mailto: tel: href:...'}
           onChange={({ target }) => onChangeValue(target.value)}
           onBlur={({ target }) =>
             onBlur(id, target.value === '' ? undefined : target.value)
@@ -149,13 +151,12 @@ export const UrlWidget = (props) => {
  * @property {Object} propTypes Property types.
  * @static
  */
-UrlWidget.propTypes = {
+CallToActionWidget.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   required: PropTypes.bool,
   error: PropTypes.arrayOf(PropTypes.string),
-  value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   onBlur: PropTypes.func,
   onClick: PropTypes.func,
@@ -170,7 +171,7 @@ UrlWidget.propTypes = {
  * @property {Object} defaultProps Default properties.
  * @static
  */
-UrlWidget.defaultProps = {
+CallToActionWidget.defaultProps = {
   description: null,
   required: false,
   error: [],
@@ -182,4 +183,4 @@ UrlWidget.defaultProps = {
   maxLength: null,
 };
 
-export default compose(withObjectBrowser)(UrlWidget);
+export default compose(withObjectBrowser)(CallToActionWidget);
