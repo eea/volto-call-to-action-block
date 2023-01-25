@@ -35,7 +35,9 @@ const View = ({ data, isEditMode }) => {
     }
   }, [isEditMode, data.href]);
 
-  const url = flattenToAppURL(data.href?.[0]?.['@id'] || data.href);
+  const url = hasLink
+    ? flattenToAppURL(data.href?.[0]?.['@id'] || data.href)
+    : '';
   const As = hasLink && isInternalURL(url) ? Link : 'a';
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>

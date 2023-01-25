@@ -44,7 +44,9 @@ export const CallToActionWidget = (props) => {
   const inputId = `field-${id}`;
 
   const [value, setValue] = useState(
-    flattenToAppURL(props.value?.[0]?.['@id'] || props.value),
+    props?.value?.length
+      ? flattenToAppURL(props.value?.[0]?.['@id'] || props.value)
+      : '',
   );
   const [isInvalid, setIsInvalid] = useState(false);
   /**
