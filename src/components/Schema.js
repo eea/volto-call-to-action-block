@@ -1,5 +1,6 @@
 import { defineMessages } from 'react-intl';
 import { addStyling } from '@plone/volto/helpers';
+import config from '@plone/volto/registry';
 
 const messages = defineMessages({
   Type: {
@@ -132,11 +133,15 @@ export const StylingSchema = (props) => {
       },
       theme: {
         title: intl.formatMessage(messages.Theme),
-        choices: [
-          ['primary', intl.formatMessage(messages.ThemePrimary)],
-          ['secondary', intl.formatMessage(messages.ThemeSecondary)],
-          ['tertiary', intl.formatMessage(messages.ThemeTertiary)],
-          ['link', intl.formatMessage(messages.ThemeLink)],
+        widget: 'theme_picker',
+        colors: [
+          ...(config.settings && config.settings.themeColors
+            ? config.settings.themeColors.map(({ value, title }) => ({
+                name: value,
+                label: title,
+              }))
+            : []),
+          //and add extra ones here
         ],
       },
       inverted: {
