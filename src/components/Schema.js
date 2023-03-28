@@ -150,6 +150,18 @@ export const StylingSchema = (props) => {
       },
       icon: {
         title: intl.formatMessage(messages.Icon),
+        description: (
+          <>
+            Ex. ri-home-line. See{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://remixicon.com/"
+            >
+              Remix Icon set
+            </a>
+          </>
+        ),
       },
       rightIcon: {
         title: intl.formatMessage(messages.IconRight),
