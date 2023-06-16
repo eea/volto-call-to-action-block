@@ -17,7 +17,7 @@
     "url": "git@github.com:eea/volto-call-to-action-block.git"
   },
   "dependencies": {
-    "@eeacms/volto-widget-theme-picker": "^1.0.1"
+    "@eeacms/volto-widget-theme-picker": "*"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.10.0",
