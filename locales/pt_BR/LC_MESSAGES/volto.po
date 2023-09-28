@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#: components/Schema
+# defaultMessage: Alignment
+msgid "Alignment"
+msgstr ""
+
+#: components/Edit
+#: components/Schema
+# defaultMessage: Call to Action
+msgid "Call to Action"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Click here
+msgid "Click here"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Icon
+msgid "Icon"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Icon on the right
+msgid "Icon on the right"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Inverted
+msgid "Inverted"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Label
+msgid "Label"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Link
+msgid "Link"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Open in new window
+msgid "Open in new window"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: undefined
+msgid "Open in parent window / frame"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Open in this window / frame
+msgid "Open in this window / frame"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Open in top frame (replaces all frames)
+msgid "Open in top frame (replaces all frames)"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Primary
+msgid "Primary"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Secondary
+msgid "Secondary"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Target
+msgid "Target"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Tertiary
+msgid "Tertiary"
+msgstr ""
+
+#: components/Schema
+# defaultMessage: Theme
+msgid "Theme"
+msgstr ""

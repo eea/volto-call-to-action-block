@@ -19,37 +19,24 @@
 
 ## Features
 
-![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/develop/docs/call-to-action.gif)
+### Demo (Internal link)
 
-## Upgrade
+![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/master/docs/call-to-action.gif)
 
-### Upgrading to 2.x
+### Demo (External link)
 
-This version requires: `@plone/volto >= 16.0.0.alpha.46` (schemaEnhancer / addStyling).
+![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/master/docs/call-to-action-external.gif)
 
 ## Getting started
 
-### Try volto-call-to-action-block with Docker
+### Try volto-statistic-block with Docker
 
-1. Get the latest Docker images
+      git clone https://github.com/eea/volto-call-to-action-block.git
+      cd volto-statistic-block
+      make
+      make start
 
-   ```
-   docker pull plone
-   docker pull plone/volto
-   ```
-
-1. Start Plone backend
-   ```
-   docker run -d --name plone -p 8080:8080 -e SITE=Plone -e PROFILES="profile-plone.restapi:blocks" plone
-   ```
-
-1. Start Volto frontend
-
-   ```
-   docker run -it --rm -p 3000:3000 --link plone -e ADDONS="@eeacms/volto-call-to-action-block" plone/volto
-   ```
-
-1. Go to http://localhost:3000
+Go to http://localhost:3000
 
 ### Add volto-call-to-action-block to your Volto project
 
@@ -69,7 +56,7 @@ This version requires: `@plone/volto >= 16.0.0.alpha.46` (schemaEnhancer / addSt
    ],
 
    "dependencies": {
-       "@eeacms/volto-call-to-action-block": "^1.0.0"
+       "@eeacms/volto-call-to-action-block": "*"
    }
    ```
 
