@@ -22,8 +22,7 @@
     yarn prepare
     ```
 
-1.  Happy hacking!
-
+1. Happy hacking!
 
 ### Or add @eeacms/volto-call-to-action-block to your Volto project
 

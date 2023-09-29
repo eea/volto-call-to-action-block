@@ -29,10 +29,10 @@
 
 ## Getting started
 
-### Try volto-statistic-block with Docker
+### Try volto-call-to-action-block with Docker
 
       git clone https://github.com/eea/volto-call-to-action-block.git
-      cd volto-statistic-block
+      cd volto-call-to-action-block
       make
       make start
 
@@ -64,7 +64,7 @@ Go to http://localhost:3000
 
    ```
    npm install -g yo @plone/generator-volto
-   yo @plone/volto my-volto-project --addon @eeacms/volto-call-to-action-block
+   yo @plone/volto my-volto-project --canary --addon @eeacms/volto-call-to-action-block
    cd my-volto-project
    ```
 
