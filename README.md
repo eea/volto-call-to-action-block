@@ -21,11 +21,11 @@
 
 ### Demo (Internal link)
 
-![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/master/docs/call-to-action.gif)
+![Call to Action](https://raw.githubusercontent.com/eea/volto-call-to-action-block/master/docs/call-to-action.gif)
 
 ### Demo (External link)
 
-![Call to Action](https://github.com/eea/volto-call-to-action-block/raw/master/docs/call-to-action-external.gif)
+![Call to Action](https://raw.githubusercontent.com/eea/volto-call-to-action-block/master/docs/call-to-action-external.gif)
 
 ## Getting started
 
