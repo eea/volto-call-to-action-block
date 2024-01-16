@@ -96,9 +96,6 @@ export const EditSchema = ({ intl }) => ({
     href: {
       title: intl.formatMessage(messages.Link),
       widget: 'call_to_action',
-      mode: 'link',
-      selectedItemAttrs: ['Title', 'Description', 'hasPreviewImage'],
-      allowExternals: true,
     },
     target: {
       title: intl.formatMessage(messages.Target),

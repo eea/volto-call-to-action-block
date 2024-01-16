@@ -19,7 +19,7 @@ const Content = ({ data }) =>
 
 const View = ({ data, isEditMode }) => {
   const [hasLink, setHasLink] = React.useState(false);
-
+  const href = data.href?.[0]?.['@id'] || data.href;
   React.useEffect(() => {
     if (isEditMode) {
       setHasLink(false);
@@ -35,9 +35,7 @@ const View = ({ data, isEditMode }) => {
     }
   }, [isEditMode, data.href]);
 
-  const url = hasLink
-    ? flattenToAppURL(data.href?.[0]?.['@id'] || data.href)
-    : '';
+  const url = hasLink && isInternalURL(href) ? flattenToAppURL(href) : href;
   const As = hasLink && isInternalURL(url) ? Link : 'a';
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>
