@@ -44,9 +44,9 @@ export const CallToActionWidget = (props) => {
   const inputId = `field-${id}`;
 
   const [value, setValue] = useState(
-    props?.value?.length
+    isInternalURL(props.value?.[0]?.['@id'] || props.value)
       ? flattenToAppURL(props.value?.[0]?.['@id'] || props.value)
-      : '',
+      : props.value,
   );
   const [isInvalid, setIsInvalid] = useState(false);
   /**
@@ -133,6 +133,7 @@ export const CallToActionWidget = (props) => {
                 props.openObjectBrowser({
                   mode: 'link',
                   overlay: true,
+                  allowExternals: true,
                   onSelectItem: (url) => {
                     onChangeValue(url);
                   },
