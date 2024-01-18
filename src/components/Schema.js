@@ -152,7 +152,7 @@ export const StylingSchema = (props) => {
             Ex. ri-home-line. See{' '}
             <a
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               href="https://remixicon.com/"
             >
               Remix Icon set
