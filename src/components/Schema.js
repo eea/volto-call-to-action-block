@@ -150,11 +150,7 @@ export const StylingSchema = (props) => {
         description: (
           <>
             Ex. ri-home-line. See{' '}
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://remixicon.com/"
-            >
+            <a target="_blank" rel="noopener" href="https://remixicon.com/">
               Remix Icon set
             </a>
           </>
