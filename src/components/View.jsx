@@ -1,7 +1,8 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import cx from 'classnames';
-import { Link } from 'react-router-dom';
+
+import { UniversalLink } from '@plone/volto/components';
 import { flattenToAppURL, isInternalURL } from '@plone/volto/helpers';
 
 const Content = ({ data }) =>
@@ -36,7 +37,7 @@ const View = ({ data, isEditMode }) => {
   }, [isEditMode, data.href]);
 
   const url = hasLink && isInternalURL(href) ? flattenToAppURL(href) : href;
-  const As = hasLink && isInternalURL(url) ? Link : 'a';
+  const As = hasLink && isInternalURL(url) ? UniversalLink : 'a';
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>
       <As
