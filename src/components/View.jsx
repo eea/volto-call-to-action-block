@@ -37,10 +37,9 @@ const View = ({ data, isEditMode }) => {
   }, [isEditMode, data.href]);
 
   const url = hasLink && isInternalURL(href) ? flattenToAppURL(href) : href;
-  const As = hasLink && isInternalURL(url) ? UniversalLink : 'a';
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>
-      <As
+      <UniversalLink
         className={cx(
           data.styles?.theme !== 'link' ? 'ui button' : '',
           data.styles?.inverted ? 'inverted' : '',
@@ -51,13 +50,13 @@ const View = ({ data, isEditMode }) => {
             : '',
           data.styles?.theme,
         )}
-        href={hasLink ? url : null}
-        to={hasLink ? url : null}
+        download={data.download}
+        href={url}
         title={hasLink ? data.text : ''}
         target={data.target}
       >
         <Content data={data} />
-      </As>
+      </UniversalLink>
     </div>
   );
 };

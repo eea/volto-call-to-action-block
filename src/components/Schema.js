@@ -75,6 +75,15 @@ const messages = defineMessages({
     id: 'Open in top frame (replaces all frames)',
     defaultMessage: 'Open in top frame (replaces all frames)',
   },
+  Download: {
+    id: 'Download',
+    defaultMessage: 'Download file',
+  },
+  DownloadDescription: {
+    id: 'DownloadDescription',
+    defaultMessage:
+      'If enabled, the file linked will be downloaded instead of opened',
+  },
 });
 
 export const EditSchema = ({ intl }) => ({
@@ -84,7 +93,7 @@ export const EditSchema = ({ intl }) => ({
     {
       id: 'default',
       title: 'Default',
-      fields: ['text', 'href', 'target'],
+      fields: ['text', 'href', 'download', 'target'],
     },
   ],
 
@@ -96,6 +105,12 @@ export const EditSchema = ({ intl }) => ({
     href: {
       title: intl.formatMessage(messages.Link),
       widget: 'call_to_action',
+    },
+    download: {
+      title: intl.formatMessage(messages.Download),
+      description: intl.formatMessage(messages.DownloadDescription),
+      type: 'boolean',
+      default: false,
     },
     target: {
       title: intl.formatMessage(messages.Target),
