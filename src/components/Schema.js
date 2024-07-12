@@ -76,7 +76,7 @@ const messages = defineMessages({
     defaultMessage: 'Open in top frame (replaces all frames)',
   },
   Download: {
-    id: 'Download',
+    id: 'Download file',
     defaultMessage: 'Download file',
   },
   DownloadDescription: {
