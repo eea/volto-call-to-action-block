@@ -80,7 +80,7 @@ const messages = defineMessages({
     defaultMessage: 'Download file',
   },
   DownloadDescription: {
-    id: 'DownloadDescription',
+    id: 'If enabled, the file linked will be downloaded instead of opened',
     defaultMessage:
       'If enabled, the file linked will be downloaded instead of opened',
   },

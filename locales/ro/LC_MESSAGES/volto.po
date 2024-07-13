@@ -58,7 +58,7 @@ msgid "Open in new window"
 msgstr "Deschide în fereastră nouă"
 
 #: components/Schema
-# defaultMessage: undefined
+# defaultMessage: Open in parent window / frame
 msgid "Open in parent window / frame"
 msgstr "Deschide în tab nou"
 

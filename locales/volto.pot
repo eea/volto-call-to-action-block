@@ -60,7 +60,7 @@ msgid "Open in new window"
 msgstr ""
 
 #: components/Schema
-# defaultMessage: undefined
+# defaultMessage: Open in parent window / frame
 msgid "Open in parent window / frame"
 msgstr ""
 
