@@ -43,10 +43,17 @@ export const CallToActionWidget = (props) => {
   } = props;
   const inputId = `field-${id}`;
 
+  // Check if value is an array and isn't empty to avoid an error when passing value
+  // to isInternalURL, we always need a string value
+  const isArray = Array.isArray(props.value);
+  const initialValue = isArray
+    ? props.value.length > 0
+      ? props.value[0]?.['@id']
+      : ''
+    : props.value;
+
   const [value, setValue] = useState(
-    isInternalURL(props.value?.[0]?.['@id'] || props.value)
-      ? flattenToAppURL(props.value?.[0]?.['@id'] || props.value)
-      : props.value,
+    isInternalURL(initialValue) ? flattenToAppURL(initialValue) : initialValue,
   );
   const [isInvalid, setIsInvalid] = useState(false);
   /**

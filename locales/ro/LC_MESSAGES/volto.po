@@ -11,88 +11,98 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Alignment"
 #: components/Schema
-# defaultMessage: Alignment
 msgid "Alignment"
 msgstr "Aliniere"
 
+#. Default: "Call to Action"
 #: components/Edit
 #: components/Schema
-# defaultMessage: Call to Action
 msgid "Call to Action"
 msgstr "Buton acțiune"
 
+#. Default: "Click here"
 #: components/Schema
-# defaultMessage: Click here
 msgid "Click here"
 msgstr "Apasă aici"
 
+#. Default: "Download file"
 #: components/Schema
-# defaultMessage: Icon
+msgid "Download file"
+msgstr ""
+
+#. Default: "Icon"
+#: components/Schema
 msgid "Icon"
 msgstr "Pictogramă"
 
+#. Default: "Icon on the right"
 #: components/Schema
-# defaultMessage: Icon on the right
 msgid "Icon on the right"
 msgstr "Pictogramă pe dreapta"
 
+#. Default: "If enabled, the file linked will be downloaded instead of opened"
 #: components/Schema
-# defaultMessage: Inverted
+msgid "If enabled, the file linked will be downloaded instead of opened"
+msgstr ""
+
+#. Default: "Inverted"
+#: components/Schema
 msgid "Inverted"
 msgstr "Inversat"
 
+#. Default: "Label"
 #: components/Schema
-# defaultMessage: Label
 msgid "Label"
 msgstr "Etichetă"
 
+#. Default: "Link"
 #: components/Schema
-# defaultMessage: Link
 msgid "Link"
 msgstr "Legătură"
 
+#. Default: "Open in new window"
 #: components/Schema
-# defaultMessage: Open in new window
 msgid "Open in new window"
 msgstr "Deschide în fereastră nouă"
 
+#. Default: ""
 #: components/Schema
-# defaultMessage: undefined
 msgid "Open in parent window / frame"
 msgstr "Deschide în tab nou"
 
+#. Default: "Open in this window / frame"
 #: components/Schema
-# defaultMessage: Open in this window / frame
 msgid "Open in this window / frame"
 msgstr "Deschide în această fereastră"
 
+#. Default: "Open in top frame (replaces all frames)"
 #: components/Schema
-# defaultMessage: Open in top frame (replaces all frames)
 msgid "Open in top frame (replaces all frames)"
 msgstr "Deschide în cadrul superior"
 
+#. Default: "Primary"
 #: components/Schema
-# defaultMessage: Primary
 msgid "Primary"
 msgstr "Primară"
 
+#. Default: "Secondary"
 #: components/Schema
-# defaultMessage: Secondary
 msgid "Secondary"
 msgstr "Secundară"
 
+#. Default: "Target"
 #: components/Schema
-# defaultMessage: Target
 msgid "Target"
 msgstr "Țintă"
 
+#. Default: "Tertiary"
 #: components/Schema
-# defaultMessage: Tertiary
 msgid "Tertiary"
 msgstr "Terțiară"
 
+#. Default: "Theme"
 #: components/Schema
-# defaultMessage: Theme
 msgid "Theme"
 msgstr "Temă"

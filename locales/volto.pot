@@ -1,100 +1,110 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2023-08-29T17:12:31.348Z\n"
+"POT-Creation-Date: 2024-07-13T09:02:58.528Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "Alignment"
 #: components/Schema
-# defaultMessage: Alignment
 msgid "Alignment"
 msgstr ""
 
+#. Default: "Call to Action"
 #: components/Edit
 #: components/Schema
-# defaultMessage: Call to Action
 msgid "Call to Action"
 msgstr ""
 
+#. Default: "Click here"
 #: components/Schema
-# defaultMessage: Click here
 msgid "Click here"
 msgstr ""
 
+#. Default: "Download file"
 #: components/Schema
-# defaultMessage: Icon
+msgid "Download file"
+msgstr ""
+
+#. Default: "Icon"
+#: components/Schema
 msgid "Icon"
 msgstr ""
 
+#. Default: "Icon on the right"
 #: components/Schema
-# defaultMessage: Icon on the right
 msgid "Icon on the right"
 msgstr ""
 
+#. Default: "If enabled, the file linked will be downloaded instead of opened"
 #: components/Schema
-# defaultMessage: Inverted
+msgid "If enabled, the file linked will be downloaded instead of opened"
+msgstr ""
+
+#. Default: "Inverted"
+#: components/Schema
 msgid "Inverted"
 msgstr ""
 
+#. Default: "Label"
 #: components/Schema
-# defaultMessage: Label
 msgid "Label"
 msgstr ""
 
+#. Default: "Link"
 #: components/Schema
-# defaultMessage: Link
 msgid "Link"
 msgstr ""
 
+#. Default: "Open in new window"
 #: components/Schema
-# defaultMessage: Open in new window
 msgid "Open in new window"
 msgstr ""
 
+#. Default: ""
 #: components/Schema
-# defaultMessage: undefined
 msgid "Open in parent window / frame"
 msgstr ""
 
+#. Default: "Open in this window / frame"
 #: components/Schema
-# defaultMessage: Open in this window / frame
 msgid "Open in this window / frame"
 msgstr ""
 
+#. Default: "Open in top frame (replaces all frames)"
 #: components/Schema
-# defaultMessage: Open in top frame (replaces all frames)
 msgid "Open in top frame (replaces all frames)"
 msgstr ""
 
+#. Default: "Primary"
 #: components/Schema
-# defaultMessage: Primary
 msgid "Primary"
 msgstr ""
 
+#. Default: "Secondary"
 #: components/Schema
-# defaultMessage: Secondary
 msgid "Secondary"
 msgstr ""
 
+#. Default: "Target"
 #: components/Schema
-# defaultMessage: Target
 msgid "Target"
 msgstr ""
 
+#. Default: "Tertiary"
 #: components/Schema
-# defaultMessage: Tertiary
 msgid "Tertiary"
 msgstr ""
 
+#. Default: "Theme"
 #: components/Schema
-# defaultMessage: Theme
 msgid "Theme"
 msgstr ""
