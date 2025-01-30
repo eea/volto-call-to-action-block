@@ -14,7 +14,7 @@ msgstr ""
 #. Default: "Alignment"
 #: components/Schema
 msgid "Alignment"
-msgstr ""
+msgstr "Ausrichtung"
 
 #. Default: "Call to Action"
 #: components/Edit
@@ -25,12 +25,12 @@ msgstr ""
 #. Default: "Click here"
 #: components/Schema
 msgid "Click here"
-msgstr ""
+msgstr "Hier klicken"
 
 #. Default: "Download file"
 #: components/Schema
 msgid "Download file"
-msgstr ""
+msgstr "Datei herunterladen"
 
 #. Default: "Icon"
 #: components/Schema
@@ -40,22 +40,22 @@ msgstr ""
 #. Default: "Icon on the right"
 #: components/Schema
 msgid "Icon on the right"
-msgstr ""
+msgstr "Icon auf der rechten Seite"
 
 #. Default: "If enabled, the file linked will be downloaded instead of opened"
 #: components/Schema
 msgid "If enabled, the file linked will be downloaded instead of opened"
-msgstr ""
+msgstr "Wenn diese Option aktiviert ist, wird die verknüpfte Datei heruntergeladen, anstatt sie zu öffnen."
 
 #. Default: "Inverted"
 #: components/Schema
 msgid "Inverted"
-msgstr ""
+msgstr "Umgekehrt"
 
 #. Default: "Label"
 #: components/Schema
 msgid "Label"
-msgstr ""
+msgstr "Text"
 
 #. Default: "Link"
 #: components/Schema
@@ -65,42 +65,42 @@ msgstr ""
 #. Default: "Open in new window"
 #: components/Schema
 msgid "Open in new window"
-msgstr ""
+msgstr "In neuem Fenster öffnen"
 
 #. Default: ""
 #: components/Schema
 msgid "Open in parent window / frame"
-msgstr ""
+msgstr "Im übergeordneten Fenster öffnen"
 
 #. Default: "Open in this window / frame"
 #: components/Schema
 msgid "Open in this window / frame"
-msgstr ""
+msgstr "In diesem Fenster öffnen"
 
 #. Default: "Open in top frame (replaces all frames)"
 #: components/Schema
 msgid "Open in top frame (replaces all frames)"
-msgstr ""
+msgstr "Im oberen Rahmen öffnen (ersetzt alle Rahmen)"
 
 #. Default: "Primary"
 #: components/Schema
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #. Default: "Secondary"
 #: components/Schema
 msgid "Secondary"
-msgstr ""
+msgstr "Sekundär"
 
 #. Default: "Target"
 #: components/Schema
 msgid "Target"
-msgstr ""
+msgstr "Ziel"
 
 #. Default: "Tertiary"
 #: components/Schema
 msgid "Tertiary"
-msgstr ""
+msgstr "Teritär"
 
 #. Default: "Theme"
 #: components/Schema
