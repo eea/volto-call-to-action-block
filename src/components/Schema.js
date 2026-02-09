@@ -84,6 +84,14 @@ const messages = defineMessages({
     defaultMessage:
       'If enabled, the file linked will be downloaded instead of opened',
   },
+  Tooltip: {
+    id: 'Tooltip',
+    defaultMessage: 'Tooltip',
+  },
+  TooltipDescription: {
+    id: 'Shown on hover',
+    defaultMessage: 'Shown on hover',
+  },
 });
 
 export const EditSchema = ({ intl }) => ({
@@ -93,7 +101,7 @@ export const EditSchema = ({ intl }) => ({
     {
       id: 'default',
       title: 'Default',
-      fields: ['text', 'href', 'download', 'target'],
+      fields: ['text', 'href', 'tooltip', 'download', 'target'],
     },
   ],
 
@@ -105,6 +113,10 @@ export const EditSchema = ({ intl }) => ({
     href: {
       title: intl.formatMessage(messages.Link),
       widget: 'call_to_action',
+    },
+    tooltip: {
+      title: intl.formatMessage(messages.Tooltip),
+      description: intl.formatMessage(messages.TooltipDescription),
     },
     download: {
       title: intl.formatMessage(messages.Download),
