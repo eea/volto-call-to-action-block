@@ -69,7 +69,7 @@ const messages = defineMessages({
   },
   TargetParent: {
     id: 'Open in parent window / frame',
-    defineMessages: 'Open in parent window / frame',
+    defaultMessage: 'Open in parent window / frame',
   },
   TargetTop: {
     id: 'Open in top frame (replaces all frames)',
