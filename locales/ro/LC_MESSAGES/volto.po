@@ -67,7 +67,7 @@ msgstr "Legătură"
 msgid "Open in new window"
 msgstr "Deschide în fereastră nouă"
 
-#. Default: ""
+#. Default: "Open in parent window / frame"
 #: components/Schema
 msgid "Open in parent window / frame"
 msgstr "Deschide în tab nou"
@@ -92,6 +92,11 @@ msgstr "Primară"
 msgid "Secondary"
 msgstr "Secundară"
 
+#. Default: "Shown on hover"
+#: components/Schema
+msgid "Shown on hover"
+msgstr ""
+
 #. Default: "Target"
 #: components/Schema
 msgid "Target"
@@ -106,3 +111,8 @@ msgstr "Terțiară"
 #: components/Schema
 msgid "Theme"
 msgstr "Temă"
+
+#. Default: "Tooltip"
+#: components/Schema
+msgid "Tooltip"
+msgstr ""
