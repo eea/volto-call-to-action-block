@@ -67,7 +67,7 @@ msgstr ""
 msgid "Open in new window"
 msgstr ""
 
-#. Default: ""
+#. Default: "Open in parent window / frame"
 #: components/Schema
 msgid "Open in parent window / frame"
 msgstr ""
@@ -92,6 +92,11 @@ msgstr ""
 msgid "Secondary"
 msgstr ""
 
+#. Default: "Shown on hover"
+#: components/Schema
+msgid "Shown on hover"
+msgstr ""
+
 #. Default: "Target"
 #: components/Schema
 msgid "Target"
@@ -105,4 +110,9 @@ msgstr ""
 #. Default: "Theme"
 #: components/Schema
 msgid "Theme"
+msgstr ""
+
+#. Default: "Tooltip"
+#: components/Schema
+msgid "Tooltip"
 msgstr ""

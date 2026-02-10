@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from 'semantic-ui-react';
+import { Icon, Popup } from 'semantic-ui-react';
 import cx from 'classnames';
 
 import { UniversalLink } from '@plone/volto/components';
@@ -37,26 +37,42 @@ const View = ({ data, isEditMode }) => {
   }, [isEditMode, data.href]);
 
   const url = hasLink && isInternalURL(href) ? flattenToAppURL(href) : href;
+
+  const linkElement = (
+    <UniversalLink
+      className={cx(
+        data.styles?.theme !== 'link' ? 'ui button' : '',
+        data.styles?.inverted ? 'inverted' : '',
+        data.styles?.icon
+          ? data.styles?.rightIcon
+            ? 'icon right labeled'
+            : 'icon left labeled'
+          : '',
+        data.styles?.theme,
+      )}
+      download={data.download}
+      href={url}
+      title={!data.tooltip && hasLink ? data.text : undefined}
+      target={data.target}
+    >
+      <Content data={data} />
+    </UniversalLink>
+  );
+
   return (
     <div className={cx('block call-to-action align', data.styles?.align)}>
-      <UniversalLink
-        className={cx(
-          data.styles?.theme !== 'link' ? 'ui button' : '',
-          data.styles?.inverted ? 'inverted' : '',
-          data.styles?.icon
-            ? data.styles?.rightIcon
-              ? 'icon right labeled'
-              : 'icon left labeled'
-            : '',
-          data.styles?.theme,
-        )}
-        download={data.download}
-        href={url}
-        title={hasLink ? data.text : ''}
-        target={data.target}
-      >
-        <Content data={data} />
-      </UniversalLink>
+      {data.tooltip ? (
+        <Popup
+          basic
+          content={data.tooltip}
+          trigger={linkElement}
+          position="bottom left"
+          wide
+          on={['hover', 'focus']}
+        />
+      ) : (
+        linkElement
+      )}
     </div>
   );
 };
