@@ -68,6 +68,7 @@ const View = ({ data, isEditMode }) => {
           trigger={linkElement}
           position="bottom left"
           wide
+          on={['hover', 'focus']}
         />
       ) : (
         linkElement
