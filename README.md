@@ -56,13 +56,15 @@ Go to http://localhost:3000
 * If you already have a volto project, just update `package.json`:
 
    ```JSON
-   "addons": [
-       "@eeacms/volto-call-to-action-block"
-   ],
-
    "dependencies": {
        "@eeacms/volto-call-to-action-block": "*"
    }
+   ```
+
+   and `volto.config.js`:
+
+   ```JavaScript
+   const addons = ['@eeacms/volto-call-to-action-block'];
    ```
 
 * If not, create one with Cookieplone, as recommended by the official Plone documentation for Volto 18+:
