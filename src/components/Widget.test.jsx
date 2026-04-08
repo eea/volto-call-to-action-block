@@ -3,7 +3,7 @@ import { render, fireEvent, cleanup } from '@testing-library/react';
 import { CallToActionWidget } from './Widget';
 import { Provider } from 'react-intl-redux';
 import configureStore from 'redux-mock-store';
-import { URLUtils } from '@plone/volto/helpers';
+import { URLUtils } from '@plone/volto/helpers/Url/Url';
 
 const mockStore = configureStore();
 const store = mockStore({
