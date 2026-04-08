@@ -1,5 +1,6 @@
+import React from 'react';
 import { defineMessages } from 'react-intl';
-import { addStyling } from '@plone/volto/helpers';
+import { addStyling } from '@plone/volto/helpers//Extensions';
 import config from '@plone/volto/registry';
 
 const messages = defineMessages({
@@ -174,13 +175,19 @@ export const StylingSchema = (props) => {
       },
       icon: {
         title: intl.formatMessage(messages.Icon),
-        description: (
-          <>
-            Ex. ri-home-line. See{' '}
-            <a target="_blank" rel="noopener" href="https://remixicon.com/">
-              Remix Icon set
-            </a>
-          </>
+        description: React.createElement(
+          React.Fragment,
+          null,
+          'Ex. ri-home-line. See ',
+          React.createElement(
+            'a',
+            {
+              target: '_blank',
+              rel: 'noopener',
+              href: 'https://remixicon.com/',
+            },
+            'Remix Icon set',
+          ),
         ),
       },
       rightIcon: {

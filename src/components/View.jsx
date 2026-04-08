@@ -2,8 +2,8 @@ import React from 'react';
 import { Icon, Popup } from 'semantic-ui-react';
 import cx from 'classnames';
 
-import { UniversalLink } from '@plone/volto/components';
-import { flattenToAppURL, isInternalURL } from '@plone/volto/helpers';
+import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
+import { flattenToAppURL, isInternalURL } from '@plone/volto/helpers/Url/Url';
 
 const Content = ({ data }) =>
   data.styles?.rightIcon ? (
