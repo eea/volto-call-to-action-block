@@ -1,3 +1,4 @@
+import { vi } from 'vitest';
 import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
 import { CallToActionWidget } from './Widget';
@@ -13,10 +14,10 @@ const store = mockStore({
   },
 });
 
-const mockOpenObjectBrowser = jest.fn();
-const mockOnChange = jest.fn();
+const mockOpenObjectBrowser = vi.fn();
+const mockOnChange = vi.fn();
 
-const isUrlSpy = jest.spyOn(URLUtils, 'isUrl');
+const isUrlSpy = vi.spyOn(URLUtils, 'isUrl');
 
 const props = {
   id: '1',
