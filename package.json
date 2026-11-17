@@ -1,6 +1,7 @@
 {
   "name": "@eeacms/volto-call-to-action-block-dev",
-  "version": "1.0.0-alpha.0",
+  "private": true,
+  "version": "7.0.0",
   "description": "@eeacms/volto-call-to-action-block: Volto add-on",
   "author": "European Environment Agency: IDM2 A-Team",
   "homepage": "https://github.com/eea/volto-call-to-action-block",
