@@ -16,6 +16,20 @@
 
 ![Call to Action](https://raw.githubusercontent.com/eea/volto-call-to-action-block/master/docs/call-to-action-external.gif)
 
+## Upgrade
+
+### Upgrading to 7.x
+
+> This version requires `Volto 18` or `Volto 19` and Node.js 22.
+
+The block keeps the same API, so upgrading from 6.x on Volto 18 needs no code changes. The release adds Volto 19 support and moves the repository to the Volto 19 layout, where the published package lives in `packages/volto-call-to-action-block`.
+
+#### Breaking changes
+
+- **Node.js 22 or newer is required** (`engines.node >= 22`), 6.x declared no engine.
+- **React 18 is required.** The package declares `react` and `react-dom` as `^18.2.0` peers, 6.x declared no peers.
+- **The package no longer ships the Jest setup.** `jest-addon.config.js` and `jest.setup.js` were removed in favour of Vitest, so a Volto 18 project that still runs the Jest harness has to keep its own copy.
+
 ## Requirements
 
 ### Backend
